@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "7e87327e-a4e1-434f-a7a1-88d9ab85a790",
+		"name": "PaymentService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14488508"
+	},
+	"item": [
+		{
+			"name": "payment request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"merchantId\": \"0\",\r\n    \"cardNumber\": \"4111111111111111\",\r\n    \"expiryMonth\": 12,\r\n    \"expiryYear\": 2024,\r\n    \"cvv\": \"123\",\r\n    \"amount\": 20,\r\n    \"currency\": \"USD\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}:{{API_PORT}}/{{API_PREFIX}}/Payments",
+					"host": [
+						"{{API_URL}}"
+					],
+					"port": "{{API_PORT}}",
+					"path": [
+						"{{API_PREFIX}}",
+						"Payments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get payment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}:{{API_PORT}}/{{API_PREFIX}}/Payments/Stripe_6275639",
+					"host": [
+						"{{API_URL}}"
+					],
+					"port": "{{API_PORT}}",
+					"path": [
+						"{{API_PREFIX}}",
+						"Payments",
+						"Stripe_6275639"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "API_URL",
+			"value": "http://localhost",
+			"type": "string"
+		},
+		{
+			"key": "API_PORT",
+			"value": "5011",
+			"type": "string"
+		},
+		{
+			"key": "API_PREFIX",
+			"value": "api",
+			"type": "string"
+		}
+	]
+}

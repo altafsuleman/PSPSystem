@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <RootNamespace>WebApiTemplate.Application</RootNamespace>
+        <AssemblyName>WebApiTemplate.Application</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Domain\Domain.csproj" />
+      <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+      <ProjectReference Include="..\PaymentAcquirer\PaymentAcquirer.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CreditCardValidator" Version="3.0.1" />
+      <PackageReference Include="FluentValidation" Version="11.9.0" />
+      <PackageReference Include="HumbleMediator" Version="1.1.1" />
+      <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="8.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    </ItemGroup>
+
+</Project>
