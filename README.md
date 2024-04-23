@@ -1,4 +1,4 @@
-**Payment Service Platform Overview**
+# Payment Service Platform Overview
 This project is an assignment to create a simple Payment Service Platform that handles payment requests and simulates interactions with payment acquirer. 
 
 We've two payment acquirer(s) being used
